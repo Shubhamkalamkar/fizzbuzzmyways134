@@ -10,9 +10,9 @@ const FizzBuzz = (mobile)=>{
         console.log(sum)
 
 for (var i = 1; i <= sum; i++) {
-     if (i % 4 == 0) s += "Fizz" + " ";
+     if (i % 4 == 0 && i % 5 == 0) s += "FizzBuzz" + " ";
+     else if (i % 4 == 0) s += "Fizz" + " ";
     else if (i % 5 == 0) s += "Buzz" + " ";
-    else if (i % 4 == 0 && i % 5 == 0) s += "FizzBuzz" + " ";
     else s += i + " ";
 }
 return s;
